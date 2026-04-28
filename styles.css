@@ -128,9 +128,6 @@ p { margin: 0; }
   color: var(--green-accent);
   margin-bottom: var(--space-3);
 }
-.eyebrow--light {
-  color: var(--gold);
-}
 
 .section-head {
   max-width: 720px;
@@ -211,20 +208,6 @@ p { margin: 0; }
   padding: 7px 16px;
 }
 .btn--black:hover { background: #1a1a1a; }
-
-.btn--white {
-  background: var(--white);
-  color: var(--green-accent);
-  border-color: var(--white);
-}
-.btn--white:hover { background: #f3f3f3; }
-
-.btn--outline-light {
-  background: transparent;
-  color: var(--white);
-  border-color: var(--white);
-}
-.btn--outline-light:hover { background: rgba(255,255,255,0.08); }
 
 /* ---------- Global Nav ---------- */
 .nav {
@@ -522,80 +505,6 @@ p { margin: 0; }
   transform: translateX(3px);
 }
 .arrow { transition: transform 0.25s ease; display: inline-block; }
-
-/* ---------- Feature band (House Green) ---------- */
-.feature-band {
-  background: var(--house-green);
-  color: var(--text-white);
-  padding: var(--space-9) var(--gutter);
-}
-@media (min-width: 768px) {
-  .feature-band { padding: 9rem var(--gutter-md); }
-}
-@media (min-width: 1024px) {
-  .feature-band { padding: 11rem var(--gutter-lg); }
-}
-
-.feature-band__inner {
-  max-width: var(--container-max);
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-7);
-  align-items: center;
-}
-@media (min-width: 1024px) {
-  .feature-band__inner {
-    grid-template-columns: 1.1fr 1fr;
-    gap: var(--space-9);
-  }
-}
-
-.feature-band__title {
-  font-size: clamp(3.0rem, 4.5vw, 5.2rem);
-  font-weight: 700;
-  color: var(--white);
-  margin-bottom: var(--space-4);
-  letter-spacing: var(--tracking-tight);
-}
-.feature-band__body {
-  font-size: 1.7rem;
-  line-height: 1.7;
-  color: var(--text-white-soft);
-  max-width: 56ch;
-  margin-bottom: var(--space-5);
-}
-.feature-band__cta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-3);
-}
-
-.feature-band__stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-3);
-}
-.stat {
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.10);
-  border-radius: var(--radius-card);
-  padding: var(--space-5) var(--space-3);
-  text-align: center;
-}
-.stat__num {
-  font-size: 4.2rem;
-  font-weight: 800;
-  color: var(--gold);
-  line-height: 1;
-  letter-spacing: var(--tracking-tight);
-}
-.stat__label {
-  margin-top: var(--space-2);
-  font-size: 1.3rem;
-  color: var(--text-white-soft);
-  letter-spacing: 0.04em;
-}
 
 /* ---------- Footer ---------- */
 .footer {
